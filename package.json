@@ -1,0 +1,15 @@
+{
+  "name": "faketravel",
+  "version": "1.0.0",
+  "description": "A project build with Net Core 3.1",
+  "main": "index.js",
+  "homepage": "https://jelly38214.github.io/csharptravel",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    ".Net Core 3.1"
+  ],
+  "author": "Jelly",
+  "license": "ISC"
+}
