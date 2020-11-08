@@ -1,0 +1,10 @@
+[branch]
+  autosetuprebase = always
+[branch "master"]
+  rebase = true
+[alias]
+  st = status
+  ck = checkout
+  pull = pull --rebase
+  sto = --set-upsteam origin
+  lg = log --oneline -10

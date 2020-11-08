@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Faketravel.API.Controllers;
 
 namespace Faketravel.API
 {
@@ -32,14 +33,11 @@ namespace Faketravel.API
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/test", async context =>
-                {
-                    await context.Response.WriteAsync("Hello Test!");
-                });
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                // endpoints.MapGet("/", async context =>
+                // {
+                //     await context.Response.WriteAsync("Hello World!");
+                // });
+                endpoints.MapControllers();
             });
         }
     }
