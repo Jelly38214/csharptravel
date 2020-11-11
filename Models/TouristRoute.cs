@@ -21,6 +21,6 @@ namespace Faketravel.API.Models
         public string Notes { get; set; }
 
         // NOTE: Setup Relationship, 1 vs N
-        public ICollection<TouristRoutePicture> TouristRoutePictures { get; set; };
+        public ICollection<TouristRoutePicture> TouristRoutePictures { get; set; }
     }
 }

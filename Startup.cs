@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Faketravel.API.Controllers;
+using Faketravel.API.Models;
+using Faketravel.API.Services;
 
 namespace Faketravel.API
 {
@@ -19,6 +21,8 @@ namespace Faketravel.API
         {
             // registry MVC
             services.AddControllers();
+
+            services.AddTransient<ITouristRouteRepository, MockTouristRouteRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
